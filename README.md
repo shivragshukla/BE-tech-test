@@ -32,9 +32,10 @@ For the purpose of this test we won't be using any storage or databases and will
 do it all in-memory.
 
 # The task
- - Fork this repository to your own GitHub account, create a new branch and do all
- your changes on this branch. When you are done please pull request your changes
- into master (**Without merging!**) so we can review the pull request.
+ - Download this repository as a ZIP and upload it to your own public repository.
+ - Create a new branch and make all your changes on this branch.
+ - When you are done, create a pull request into the master branch *without merging* so that we can review your work.
+ - Send the URL of your repo to your Freddies Flowers contact or recruiter - do not share it with anyone else.
  - You can create or add any additional tests you may require, but please do not 
  modify any of the existing tests as these should all ideally pass at the end of
  the exercise.
@@ -45,11 +46,9 @@ do it all in-memory.
  
 #### Getting started
 
-- CD into the directory where you have cloned your fork of this repository and run `composer install`.
+- CD into the directory where you have downloaded this repository and run `composer install`.
 - Run `./vendor/bin/phpunit`. The tests will initially fail, your task is to write the code
 that ensures they pass.
-- Once complete, commit and push the result to a new branch. Pull request the branch and send
-us the URL to review.
  
 # The business rules
 1) A subscription results in recurring deliveries. Each subscription has a specific
