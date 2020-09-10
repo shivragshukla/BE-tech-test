@@ -32,7 +32,7 @@ For the purpose of this test we won't be using any storage or databases and will
 do it all in-memory.
 
 # The task
- - Download this repository as a ZIP and upload it to your own public repository
+ - Download this repository as a ZIP and upload it to your own public repository.
  - Create a new branch and make all your changes on this branch.
  - When you are done, create a pull request into the master branch *without merging* so that we can review your work.
  - Send the URL of your repo to your Freddies Flowers contact or recruiter - do not share it with anyone else.
