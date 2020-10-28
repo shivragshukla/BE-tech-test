@@ -45,4 +45,13 @@ class ScheduledOrder
         $this->deliveryDate = $deliveryDate;
         $this->interval     = $isInterval;
     }
+
+    /**
+     * get interval
+     * 
+     * @return boolean
+     */
+    public function isInterval() {
+        return $this->interval;
+    }
 }
