@@ -78,4 +78,13 @@ class ScheduledOrder
         return $this->holiday;
     }
 
+    /**
+     * get delivery date
+     * 
+     * @return date
+     */
+    public function getDeliveryDate() {
+        return $this->deliveryDate;
+    }
+
 }
