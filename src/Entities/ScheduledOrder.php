@@ -87,4 +87,27 @@ class ScheduledOrder
         return $this->deliveryDate;
     }
 
+     /**
+     * set optin
+     * 
+     * @var boolean
+     */
+    public function setOptIn(bool $optin) {
+
+        if ($optin == true && $this->holiday == false && $this->interval == false) {
+            $this->optIn  = true;
+        }else{
+            $this->optIn  = false;
+        }
+    }
+
+     /**
+     * get optin
+     * 
+     * @return boolean
+     */
+    public function isOptIn() {
+        return $this->optIn;
+    }
+
 }
