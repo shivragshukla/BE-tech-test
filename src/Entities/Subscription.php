@@ -2,6 +2,8 @@
 
 namespace App\Entities;
 
+use Carbon\Carbon;
+
 class Subscription
 {
     /**
@@ -95,5 +97,23 @@ class Subscription
      */
     public function getPlan() {
         return self::PLANS_ALLOWED[$this->plan];
+    }
+
+    /**
+     * set delivery date
+     * @var \Carbon\Carbon 
+     * @return object
+     */
+    public function setNextDeliveryDate(Carbon $deliveryDate) {
+        $this->nextDeliveryDate = $deliveryDate;
+        return $this;
+    }
+
+    /**
+     * get delivery date
+     * @return \Carbon\Carbon 
+     */
+    public function getNextDeliveryDate() {
+        return $this->nextDeliveryDate;
     }
 }
