@@ -54,4 +54,28 @@ class ScheduledOrder
     public function isInterval() {
         return $this->interval;
     }
+
+     /**
+     * set holiday
+     * 
+     *  @var boolean
+     */
+    public function setHoliday(bool $holiday) {
+
+        if ($holiday == true && $this->interval == true) {
+            $this->holiday  = true;
+        }else{
+            $this->holiday  = false;
+        }
+    }
+
+    /**
+     * get holiday
+     * 
+     * @return boolean
+     */
+    public function isHoliday() {
+        return $this->holiday;
+    }
+
 }
