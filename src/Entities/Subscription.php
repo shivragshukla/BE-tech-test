@@ -78,4 +78,22 @@ class Subscription
     public function getStatus() {
         return self::STATUSES_ALLOWED[$this->status];
     }
+
+    /**
+     * set plan
+     * @var int
+     * @return object
+     */
+    public function setPlan(int $plan) {
+        $this->plan = $plan;
+        return $this;
+    }
+
+    /**
+     * get plan
+     * @return string
+     */
+    public function getPlan() {
+        return self::PLANS_ALLOWED[$this->plan];
+    }
 }
