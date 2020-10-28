@@ -60,4 +60,22 @@ class Subscription
      * @var \Carbon\Carbon|null
      */
     protected $nextDeliveryDate;
+
+    /**
+     * set status
+     * @var int
+     * @return object
+     */
+    public function setStatus(int $status) {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * get status
+     * @return string
+     */
+    public function getStatus() {
+        return self::STATUSES_ALLOWED[$this->status];
+    }
 }
